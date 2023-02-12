@@ -44,7 +44,6 @@ function createPromise(position, delay) {
         `✅ Fulfilled promise ${position} in ${delay}ms`,
         options
       );
-      /* console.log(`✅ Fulfilled promise ${position} in ${delay}ms`); */
     })
 
     .catch(({ position, delay }) => {
@@ -52,6 +51,5 @@ function createPromise(position, delay) {
         `❌ Rejected promise ${position} in ${delay}ms`,
         options
       );
-      /* console.log(`❌ Rejected promise ${position} in ${delay}ms`); */
     });
 }
